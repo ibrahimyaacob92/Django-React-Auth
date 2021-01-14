@@ -1,0 +1,20 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import {AuthProvider} from "./context";
+import { debugContextDevtool} from 'react-context-devtool'
+
+const container = document.getElementById("root")
+
+ReactDOM.render(
+  <React.StrictMode>
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+  </React.StrictMode>,
+  container
+);
+
+
+debugContextDevtool(container)

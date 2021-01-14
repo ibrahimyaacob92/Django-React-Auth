@@ -1,0 +1,30 @@
+Backend Outline steps :
+
+1. installations & settings.py 
+2. custom user model app, serializer & set it to settings
+
+3. configure authentication in settings :
+    3.1 rest framework in settings
+    3.2 djoser
+    3.3 jwt
+    3.4 email
+    3.5 Social authentications
+
+4. configure djoser URL endpoints in Project's URL
+5. Migrate Model, Create Superuser and configure admin Page
+6. Test Token Auth with Postman
+    6.1 Basic Registration : /auth/users/
+    6.2 Email Activation - using ID & token : /auth/users/activation/
+    6.3 Login & Get Token : /auth/jwt/create/
+    6.4 Get Requests : /auth/users/reset_password/
+    6.5 Password Reset : /auth/users/reset_password_confirm/
+    6.6 Token Refresh : /auth/jwt/refresh
+
+7. Front End Setup
+    7.1 Create frontend folder and create react app in it
+    7.2 Modify the template and static url & URL path -
+    7.3 CORS allow host
+    
+
+
+Front End Outline Steps :
